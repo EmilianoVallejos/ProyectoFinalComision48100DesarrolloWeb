@@ -1,0 +1,155 @@
+@import "variables";
+@import "promociones";
+@import "reset";
+@import"sucursales";
+
+
+@font-face {
+	font-family: NanumPenScript;
+	src: url(../fonts/Nanum_Pen_Script/NanumPenScript-Regular.ttf );
+}
+
+@keyframes anim {
+	from {
+		width: 0;
+	}
+}
+.headerIndex {
+padding: 10px;
+margin: auto;
+display: flexbox;
+}
+
+.contenedorProductos {
+	display: flex;
+	flex-wrap: wrap;
+	width: auto;
+	display: block;
+}
+.accordion {
+	width: 60%;
+	margin: auto;
+}
+@media (max-width:800px) {
+	.accordion {
+		width: 80%;
+		margin: auto;
+	}
+}
+
+.boxModelingIndex {
+	margin: auto;
+	width: 50%;
+	border: 2px solid black;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+}
+.AnimalungoStyle {
+	white-space: nowrap;
+	overflow: hidden;
+	width: 10em;
+	animation: anim 4s infinite;
+	font-size: 90px;
+	margin: 10px;
+	font-family: $font-family_2;
+}
+
+.OfertaSemanal {
+	text-align: center;
+	font-size: 60px;
+	font-family: $font-family_2;
+}
+body {
+	background-color: $background-color_3;
+}
+h1 {
+	color: $color_2;
+}
+h2 {
+	color: $color_1;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: $background-color_3;
+	font-family: $font-family_2;
+}
+li {
+	float: left;
+	a {
+		display: block;
+		color: $color_3;
+		text-align: justify;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-family: $font-family_2;
+		font-size: 20px;
+		&:hover {
+			background-color: $background-color_4;
+		}
+	}
+}
+p {
+	font-family: $font-family_2;
+	font-size: 20px;
+	text-align: center;
+}
+img {
+	border-radius: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container {
+	margin: 100px 100px 20px 200px;
+	position: relative;
+	width: 50%;
+	&:hover {
+		.ImageOffer {
+			opacity: 0.3;
+		}
+		.middle {
+			opacity: 1;
+		}
+	}
+}
+.ImageOffer {
+	opacity: 1;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+.text {
+	background-color: $background-color_5;
+	color: $color_3;
+	font-size: 20px;
+	font-family: $font-family_2;
+	padding: 16px 32px;
+}
+@media (max-width: 600px) {
+	.promoFlexCajaPadre {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.publiFlexCajaPadre {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+

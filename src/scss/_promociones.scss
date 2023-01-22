@@ -1,0 +1,53 @@
+.PadrePromoGrid {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.promoFlexCajaPadre {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.promoFlexCajaHijo {
+	padding: 40px 40px;
+	margin: 30px 30px;
+	width: auto;
+	border-radius: 10%;
+	box-shadow: -43px 44px 6px -3px rgba(194,108,28,0.56);
+	&:hover{
+	opacity: 0.8;
+	}
+}
+.publiFlexCajaPadre {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.publiFlexCajaHijo {
+	padding: 40px 40px;
+	margin: 30px 30px;
+	width: auto;
+}
+.publiTitle {
+	margin: 10px;
+}
+.tituloPromoFlexFont {
+	font-family: $font-family_1;
+	text-align: justify;
+	text-justify: inter-word;
+}
+.buttonPromoFlex {
+	font-size: 20px;
+	background-color: $background-color_1;
+	border-radius: 4px;
+	color: $color_1;
+	border: 2px solid black;
+	transition-duration: 0.4s;
+	width: 150px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	&:hover {
+		background-color: $background-color_2;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+}
